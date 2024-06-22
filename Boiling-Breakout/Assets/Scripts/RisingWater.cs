@@ -7,7 +7,11 @@ public class RisingWater : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("RisingWaterTester");
+        // change load scene
+        if (other.CompareTag("Player")) 
+        {
+            SceneManager.LoadScene("RisingWaterTester");
+        }
     }
 
     // Update is called once per frame
