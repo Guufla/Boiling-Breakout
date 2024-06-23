@@ -5,9 +5,11 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] foodPrefabs;
-    private float spawnRangeX = 4;
+    private float spawnRangeXLower = 0.5f;
+    private float spawnRangeXUpper = 21;
     private float spawnPosY = 30;
-    private float spawnRangeZ = 1;
+    private float spawnRangeZLower = -5.35f;
+    private float spawnRangeZUpper = 2;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
 
@@ -26,7 +28,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomFood() 
     { 
         int foodIndex = Random.Range(0, foodPrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), spawnPosY, Random.Range(-spawnRangeZ, spawnRangeZ));
+        Vector3 spawnPos = new Vector3(Random.Range(spawnRangeXLower, spawnRangeXUpper), spawnPosY, Random.Range(spawnRangeZLower, spawnRangeZUpper));
         Instantiate(foodPrefabs[foodIndex], spawnPos, foodPrefabs[foodIndex].transform.rotation);
     }
 }
