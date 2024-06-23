@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 7408304419008428785}
-  speed: 7
+  speed: 2.91
   player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
@@ -136,7 +136,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  attackSpeed: 50
+  attackSpeed: 10.1
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10.5
   timeBetweenAttacks: 1.36
