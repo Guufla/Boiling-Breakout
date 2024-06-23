@@ -22,7 +22,6 @@ public class EnemyBehavior : MonoBehaviour
 
     // Attacking
     public float timeBetweenAttacks;
-    bool alreadyAttacked = false;
     private bool isLunging = false;
     private bool isGrounded = true;
 
