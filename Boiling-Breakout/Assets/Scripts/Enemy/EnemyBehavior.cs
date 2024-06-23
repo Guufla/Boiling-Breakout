@@ -123,8 +123,8 @@ public class EnemyBehavior : MonoBehaviour
             isGrounded = false;
             dashTimer = 1f;
             Debug.Log("DASH?");
-            enemyBody.AddForce(transform.up  * player.position.y * 4, ForceMode.Impulse);
-            enemyBody.AddForce(transform.forward * 30, ForceMode.Impulse);
+            enemyBody.AddForce(transform.up  * player.position.y * 8f, ForceMode.Impulse);
+            enemyBody.AddForce(transform.forward * 40, ForceMode.Impulse);
         }
 
     }
