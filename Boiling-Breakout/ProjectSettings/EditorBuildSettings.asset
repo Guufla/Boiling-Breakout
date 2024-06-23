@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RisingWaterTester.unity
     guid: 767a43178d6f07c4fb4dfbb8b519b839
   - enabled: 1
+    path: Assets/Scenes/FinalProduct.unity
+    guid: 7cceb1b59900ad84fa63873a63c3a9da
+  - enabled: 1
     path: Assets/Scenes/LoseMenu.unity
     guid: 1538508d0d5fb254188094a1ec1717ea
   - enabled: 1
