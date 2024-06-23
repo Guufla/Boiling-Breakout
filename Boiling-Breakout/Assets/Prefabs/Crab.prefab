@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 857757876562482577}
   - component: {fileID: 9126998956306250006}
   - component: {fileID: 3375749709671971438}
-  m_Layer: 0
+  - component: {fileID: 2485979188747999244}
+  m_Layer: 6
   m_Name: Crab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee039e45b58fd64ebb57729e581f25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   jumpForce: 12
   wallJumpForce: 14
   totalJumps: 2
@@ -149,7 +150,22 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.68
-  m_Height: 0.94
+  m_Radius: 0.59
+  m_Height: 1.45
   m_Direction: 1
-  m_Center: {x: 0, y: 0.1, z: -0.019397795}
+  m_Center: {x: 0, y: 0.13, z: -0.019397795}
+--- !u!114 &2485979188747999244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8906679271797868166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a983aeba62053ff4b80d557d07b99d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberToEscape: 2
+  coolDown: 3
+  isStuck: 0
