@@ -10,7 +10,7 @@ public class RisingWater : MonoBehaviour
         // change load scene
         if (other.CompareTag("Player")) 
         {
-            SceneManager.LoadScene("RisingWaterTester");
+            SceneManager.LoadScene("LoseMenu");
         }
     }
 
