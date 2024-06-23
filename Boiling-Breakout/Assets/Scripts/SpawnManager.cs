@@ -6,7 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] foodPrefabs;
     private float spawnRangeX = 4;
-    private float spawnPosY = 3;
+    private float spawnPosY = 30;
     private float spawnRangeZ = 1;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
