@@ -89,7 +89,7 @@ public class Movement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftShift) && totalDashes > 0){
             Debug.Log("Dash");
             playerBody.velocity = new Vector3(0f,0f,0f);
-            playerBody.AddForce(2 * speed * horizontalInput , 0 , 2 * speed * verticalInput,ForceMode.Impulse);
+            playerBody.AddForce(2 * speed * -horizontalInput , 0 , 2 * speed * -verticalInput,ForceMode.Impulse);
             --totalDashes;
         }
 
