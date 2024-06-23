@@ -97,14 +97,14 @@ public class Movement : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        if(other.gameObject.CompareTag("Wall")){
+        if(other.gameObject.layer == 7){
             
             Debug.Log("Hit Wall");
             WallJump = true;
         }
     }
     private void OnCollisionExit(Collision other) {
-        if(other.gameObject.CompareTag("Wall")){
+        if(other.gameObject.layer == 7){
             
             Debug.Log("Left Wall");
             WallJump = false;
